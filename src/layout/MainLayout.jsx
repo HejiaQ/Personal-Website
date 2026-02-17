@@ -45,7 +45,7 @@ export default function MainLayout() {
             <div className="flex items-center gap-4">
               <div className="w-1 h-8 bg-orange-500 rounded-full" />
               <div>
-                <p className="text-sm font-bold tracking-tight">Hejia</p>
+                <p className="text-sm font-bold tracking-tight">What I believe...</p>
                 <p className="text-[10px] text-slate-400 uppercase tracking-widest">"Curiosity saves the cat."</p>
               </div>
             </div>

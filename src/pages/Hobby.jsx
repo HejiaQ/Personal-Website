@@ -4,7 +4,11 @@ const hobbies = [
   {
     id: 1,
     title: "Drawing",
-    description: "I enjoy many forms of drawing, involving water color, oil painting, digital painting, etc.",
+    description: `
+    I enjoy many forms of drawing, involving water color, oil painting, digital painting, etc.
+    It is very relaxing to create arts and see where my imagination would lead me to. 
+    
+    `,
     tag: "Visuals",
     color: "blue"
   },
@@ -25,7 +29,7 @@ const hobbies = [
   {
     id: 4,
     title: "Some Fun Facts",
-    description: "My name means a plant is growing well. I like otters and cats. ",
+    description: "My name means a plant is growing well. <br> I like otters and cats. ",
     tag: "I cannot classify this",
     color: "orange"
   }

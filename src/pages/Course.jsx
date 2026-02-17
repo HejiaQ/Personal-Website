@@ -5,8 +5,12 @@ const courseData = [
     code: "CPSC221",
     name: "Data Structures & Algorithms",
     focus: "Logic",
-    takeaway: "Mastered complex problem-solving and code efficiency (Big O notation).",
-    skills: ["Trees/Graphs", "Sorting", "Time Complexity"]
+    takeaway: `
+    - Calculating code efficiencies 
+    - Implement different data structures
+    - Manipulating different data structures to solve complex problems
+    `,
+    skills: ["Time Complexity", "Sorting", "Heaps", "Trees/Graphs"]
   },
   {
     code: "CPSC213",
@@ -14,6 +18,13 @@ const courseData = [
     focus: "Design",
     takeaway: "Studied user psychology and the principles of intuitive interface design.",
     skills: ["Operating System", "Thread", "Assembly Language"]
+  },
+  {
+    code: "CPSC317",
+    name: "Introduction to Computer Networking",
+    focus: "Logic",
+    takeaway: "Understanding how large-scale applications communicate across servers.",
+    skills: ["IP/TCP", "DNS", "VPN", "Routing Policy"]
   },
   {
     code: "STAT305",
@@ -29,17 +40,23 @@ export default function Course() {
     <div className="space-y-12">
       {/* Header */}
       <header className="max-w-2xl">
-        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
+        <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
           Academic <span className="text-blue-600">Course</span>
         </h1>
         <p className="text-slate-500 mt-4 leading-relaxed">
-          While my projects show what I can <span className="text-slate-900 font-bold">build</span>, these represent the core 
-          <span className="text-slate-900 font-bold"> principles</span> I use to solve complex problems.
+          Here are core courses in my learning journey, which builds strong 
+          foundations for me to solve complex problems.
         </p>
       </header>
+       {/* Top Credential Bar */}
+      <div className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
+        <p className="text-xs text-slate-400 font-medium text-center uppercase tracking-[0.2em]">
+          Current Avg: <span className="text-slate-900"> 94% </span> • Dean's List • Focus: Software & Data
+        </p>
+      </div>
 
       {/* Course List */}
-      <div className="grid gap-6">
+      <div className="grid gap-6 whitespace-pre-line leading-tight">
         {courseData.map((item) => (
           <div 
             key={item.code} 
@@ -80,12 +97,7 @@ export default function Course() {
         ))}
       </div>
 
-      {/* Bottom Credential Bar */}
-      <div className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
-        <p className="text-xs text-slate-400 font-medium text-center uppercase tracking-[0.2em]">
-          Current GPA: <span className="text-slate-900">3.9 / 4.0</span> • Dean's List 2024 • Focus: Software Engineering & UI Design
-        </p>
-      </div>
+     
     </div>
   );
 }
