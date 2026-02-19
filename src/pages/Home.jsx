@@ -1,3 +1,5 @@
+import my_photo from '../assets/my_photo.jpg'
+
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 py-10">
@@ -10,7 +12,7 @@ export default function Home() {
         <div className="absolute -bottom-4 left-4 w-12 h-12 border-b-4 border-l-4 border-blue-600 rounded-bl-xl" />
         
         <img 
-          src="/src/assets/my_photo.jpg" 
+          src={my_photo} 
           alt="Profile" 
           className="w-64 h-64 lg:w-72 lg:h-72 rounded-2xl object-cover shadow-2xl relative z-10"
         />

@@ -1,4 +1,7 @@
 import React from 'react';
+import codequiz from '../assets/CodeQuizIntro.png';
+import influencerHome from '../assets/InfluencerHome.png';
+import spendingJava from '../assets/SpendingJavaMain.png';
 
 const projects = [
   {
@@ -8,7 +11,7 @@ const projects = [
     tech: ["React", "Node.js", "Ollama", "Course Project"],
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
     link: "#",
-    image: "/src/assets/CodeQuizIntro.png",
+    image: codequiz,
     status: "Completed"
   },
   {
@@ -18,7 +21,7 @@ const projects = [
     tech: ["Sqlplus", "HTML", "CSS", "Course Project"],
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
     link: "#",
-    image: "/src/assets/InfluencerHome.png",
+    image: influencerHome,
     status: "In Progress"
   },
   {
@@ -28,7 +31,7 @@ const projects = [
     tech: ["Data Persistent", "Java", "JUnit", "Course Project"],
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
     link: "#",
-    image: `/src/assets/SpendingJavaMain.png`,
+    image: spendingJava,
     status: "Completed"
   }
 ];
