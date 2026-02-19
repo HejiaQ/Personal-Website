@@ -2,9 +2,37 @@ import React from 'react';
 
 const courseData = [
   {
+    code: "CPSC320",
+    name: "Intermediate Algorithm Design and Analysis",
+    focus: "CS",
+    takeaway: "",
+    skills: ["In Progress", "Greedy Algorithm", "Prune & Search", "time complexity analysis"]
+  },
+    {
+    code: "CPSC310",
+    name: "Introduction to Software Enigneering",
+    focus: "CS",
+    takeaway: "",
+    skills: ["Agile", "DevOp", "Design Principles", "API"]
+  },
+  {
+    code: "CPSC322",
+    name: "Introduction to Artificial Intelligence",
+    focus: "CS",
+    takeaway: "Understanding how large-scale applications communicate across servers.",
+    skills: ["Decision Network", "Deterministic VS Stochastic Agent", "Search", "Constrain Optimization"]
+  },
+  {
+    code: "CPSC317",
+    name: "Introduction to Computer Networking",
+    focus: "CS",
+    takeaway: "",
+    skills: ["IP/TCP", "DNS", "VPN", "Routing Policy"]
+  },
+  {
     code: "CPSC221",
     name: "Data Structures & Algorithms",
-    focus: "Logic",
+    focus: "CS",
     takeaway: `
     - Calculating code efficiencies 
     - Implement different data structures
@@ -15,23 +43,30 @@ const courseData = [
   {
     code: "CPSC213",
     name: "Computer System",
-    focus: "Design",
-    takeaway: "Studied user psychology and the principles of intuitive interface design.",
+    focus: "CS",
+    takeaway: "Programming using C; Debug using gdb",
     skills: ["Operating System", "Thread", "Assembly Language"]
   },
   {
-    code: "CPSC317",
-    name: "Introduction to Computer Networking",
-    focus: "Logic",
-    takeaway: "Understanding how large-scale applications communicate across servers.",
-    skills: ["IP/TCP", "DNS", "VPN", "Routing Policy"]
+    code: "STAT305",
+    name: "Introduction to Statistical Inference",
+    focus: "STAT",
+    takeaway: "Using sample to make inference about population; Bayesian view and Frequentist view",
+    skills: ["Sampling Distribution", "Maximum-Likelihood", "Inference"]
   },
   {
-    code: "STAT305",
-    name: "Statistical Inference",
-    focus: "Logic",
-    takeaway: "Understanding how large-scale applications communicate across servers.",
-    skills: ["Sampling Distribution", "Maximum-Likelihood", "Inference"]
+    code: "STAT306",
+    name: "Finding Relationships in Data",
+    focus: "STAT",
+    takeaway:  `Relationship between different types of data; model selection`,
+    skills: ["Linear Regression", "Poisson Regression", "LASSO", "AIC/BIC"]
+  },
+  {
+    code: "DSCI100",
+    name: "Introduction to Data Science",
+    focus: "STAT",
+    takeaway: "",
+    skills: ["Python Scikit-learn", "Cross-Validation", "Exploratory Data Analysis"]
   }
 ];
 
@@ -67,7 +102,7 @@ export default function Course() {
               {/* Left Side: Identifiers */}
               <div className="flex items-center gap-4">
                 <div className={`w-15 h-15 flex-shrink-0 flex items-center justify-center rounded-xl font-black text-xs ${
-                  item.focus === 'Logic' ? 'bg-slate-900 text-white' : 'bg-orange-500 text-white'
+                  item.focus === 'CS' ? 'bg-slate-900 text-white' : 'bg-orange-500 text-white'
                 }`}>
                   {item.code}
                 </div>
@@ -84,7 +119,7 @@ export default function Course() {
               {/* Right Side: Skills Tags */}
               <div className="flex flex-wrap gap-2 md:justify-end">
                 {item.skills.map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-wider rounded-md border border-blue-100">
+                  <span key={skill} className={`px-3 py-1 ${skill == "In Progress" ? "bg-orange-50 text-orange-700": "bg-blue-50 text-blue-700"}  text-[10px] font-bold uppercase tracking-wider rounded-md border border-blue-100`}>
                     {skill}
                   </span>
                 ))}

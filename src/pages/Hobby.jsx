@@ -4,9 +4,7 @@ const hobbies = [
   {
     id: 1,
     title: "Drawing",
-    description: `
-    I enjoy many forms of drawing, involving water color, oil painting, digital painting, etc.
-    It is very relaxing to create arts and see where my imagination would lead me to. 
+    description: `I enjoy many forms of drawing, involving water color, oil painting, digital painting, etc. It is very relaxing to create arts and see where my imagination would lead me to. 
     
     `,
     tag: "Visuals",
@@ -15,7 +13,7 @@ const hobbies = [
   {
     id: 2,
     title: "Language Learning",
-    description: "Learning ",
+    description: "I find learning languages (no matter it's a coding language or a natural language) very interesting. It feels like you earn a completely new way of constructing and interpreting the world.",
     tag: "Language",
     color: "orange"
   },
@@ -28,8 +26,12 @@ const hobbies = [
   },
   {
     id: 4,
-    title: "Some Fun Facts",
-    description: "My name means a plant is growing well. <br> I like otters and cats. ",
+    title: "Some (Not) Fun Facts",
+    description: `
+    - I like cats, otters, and capybaras (among these, if I got to choose, I'd like to be a capybrara)
+    - A band that I recently listened to is "The Last Dinner Party"
+    - My very first coding exprience is with LEGO robot
+     `,
     tag: "I cannot classify this",
     color: "orange"
   }
@@ -49,7 +51,7 @@ export default function Hobby() {
       </header>
 
       {/* Staggered Content Area */}
-      <div className="columns-1 md:columns-2 gap-8 space-y-8">
+      <div className="columns-1 md:columns-2 gap-8 space-y-8 whitespace-pre-line">
         {hobbies.map((hobby) => (
           <div 
             key={hobby.id} 

@@ -3,33 +3,33 @@ import React from 'react';
 const projects = [
   {
     id: "p1",
-    title: "Placeholder 1",
+    title: "Web Application Project: Code Comprehension Exercise Web App",
     category: "Development",
-    tech: ["React", "Tailwind", "Framer"],
+    tech: ["React", "Node.js", "Ollama", "Course Project"],
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
     link: "#",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
-    status: "Live"
+    image: "/src/assets/CodeQuizIntro.png",
+    status: "Completed"
   },
   {
     id: "p2",
-    title: "Placeholder 2",
+    title: "Database Project: Analyzing Influencer Data with SQL",
     category: "Design",
-    tech: ["TypeScript", "Three.js"],
+    tech: ["Sqlplus", "HTML", "CSS", "Course Project"],
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
     link: "#",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/InfluencerHome.png",
     status: "In Progress"
   },
   {
     id: "p3",
-    title: "Placeholder 3",
+    title: "Java Desktop Project: Spending Management App",
     category: "Logic",
-    tech: ["Node.js", "D3.js"],
+    tech: ["Data Persistent", "Java", "JUnit", "Course Project"],
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
     link: "#",
-    image: "https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=800",
-    status: "Live"
+    image: `/src/assets/SpendingJavaMain.png`,
+    status: "Completed"
   }
 ];
 
@@ -85,7 +85,7 @@ export default function Projects() {
                   />
                   <div className="absolute top-6 right-6">
                     <span className={`px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm ${
-                      project.status === 'Live' ? 'bg-orange-500 text-white' : 'bg-slate-900 text-white'
+                      project.status === 'In Progress' ? 'bg-orange-500 text-white' : 'bg-blue-900 text-white'
                     }`}>
                       {project.status}
                     </span>
@@ -118,13 +118,13 @@ export default function Projects() {
                       {project.description}
                     </p>
                     
-                    <a 
+                    {/* <a 
                       href={project.link} 
                       className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest text-blue-600 hover:text-orange-500 transition-colors group"
                     >
                       Explore Project
                       <span className="transform group-hover:translate-x-2 transition-transform">→</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
