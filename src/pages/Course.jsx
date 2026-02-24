@@ -1,6 +1,13 @@
 import React from 'react';
 
 const courseData = [
+   {
+    code: "IT",
+    name: "Google IT support Certificate (Online Certificate)",
+    focus: "CS",
+    takeaway: "",
+    skills: ["Troubele Shooting", "Networking", "Command Line Tools"]
+  },
   {
     code: "CPSC320",
     name: "Intermediate Algorithm Design and Analysis",

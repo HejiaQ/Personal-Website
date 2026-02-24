@@ -2,14 +2,25 @@ import React from 'react';
 import codequiz from '../assets/CodeQuizIntro.png';
 import influencerHome from '../assets/InfluencerHome.png';
 import spendingJava from '../assets/SpendingJavaMain.png';
+import { HashLink } from 'react-router-hash-link';
 
 const projects = [
   {
     id: "p1",
     title: "Web Application Project: Code Comprehension Exercise Web App",
     category: "Development",
-    tech: ["React", "Node.js", "Ollama", "Course Project"],
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
+    tech: ["React", "Node.js", "Ollama", "Docker", "Course Project"],
+    description: 
+    `What the app does: This is a web app that helps users practice explaining code in plain English. Users submit descriptions of code, and the app evaluates them by generating code with an Ollama AI model and testing it against the original logic. Provides immediate feedback to improve comprehension skills.
+    
+     What I achieved:
+    - Designed and implemented part of the API endpoints and handled user submissions.
+    - Built Docker containers for front-end and back-end, and then used docker compose to integrate frontend, backend, and Ollama.
+    - Formatted part of the front-end components for better usability and layout.
+    - Wrote and ran API tests to ensure reliable evaluation and functionality.
+    
+    Other Group Members:
+    Jeffrey Zhai, Emma Park, Yining Zhong`,
     link: "#",
     image: codequiz,
     status: "Completed"
@@ -19,10 +30,20 @@ const projects = [
     title: "Database Project: Analyzing Influencer Data with SQL",
     category: "Design",
     tech: ["Sqlplus", "HTML", "CSS", "Course Project"],
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
+    description: 
+    `What the app does: This is a web application that visualizes and analyzes data about social media influencers and brand deals. Users can explore complex relationships in the data—such as one-to-many connections and dependencies—while interacting with dynamic summaries and visualizations.
+     
+    What I achieved:
+     - Wrote complex SQL queries to fetch, summarize, and aggregate data for analysis.
+     - Developed API endpoints to connect the front-end interface with the database.
+     - Designed and formatted front-end components to present insights clearly.
+     - Built functions to handle database communication efficiently and reliably.
+     
+    Other Group Members: 
+    Enora Sun, Alice Peng`,
     link: "#",
     image: influencerHome,
-    status: "In Progress"
+    status: "Completed"
   },
   {
     id: "p3",
@@ -56,21 +77,20 @@ export default function Projects() {
             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Index</p>
             <nav className="flex flex-col gap-4">
               {projects.map((p, index) => (
-                <a 
+                <HashLink
                   key={p.id} 
-                  href={`#${p.id}`} 
-                  className="group flex items-center gap-3 text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors"
-                >
+                  smooth to={`#${p.id}`} 
+                  className="group flex items-center gap-3 text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors">
                   <span className="text-slate-300 group-hover:text-orange-500 transition-colors">0{index + 1}</span>
                   {p.title}
-                </a>
+                </HashLink>
               ))}
             </nav>
           </div>
         </aside>
 
         {/* RIGHT: SCROLLABLE SECTIONS */}
-        <div className="flex-grow space-y-32">
+        <div className="flex-grow space-y-32 whitespace-pre-line ">
           {projects.map((project) => (
             <section 
               key={project.id} 
