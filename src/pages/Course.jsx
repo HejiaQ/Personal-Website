@@ -5,35 +5,35 @@ const courseData = [
     code: "IT",
     name: "Google IT support Certificate (Online Certificate)",
     focus: "CS",
-    takeaway: "",
+    takeaway: "Built a strong foundation in IT concepts through hands-on practice, applying troubleshooting, networking, and system administration skills in a virtual environment.",
     skills: ["Troubele Shooting", "Networking", "Command Line Tools"]
   },
   {
     code: "CPSC320",
     name: "Intermediate Algorithm Design and Analysis",
     focus: "CS",
-    takeaway: "",
+    takeaway: "Developed techniques for solving complex problems by studying advanced algorithms and strategic problem-solving approaches.",
     skills: ["In Progress", "Greedy Algorithm", "Prune & Search", "time complexity analysis"]
   },
     {
     code: "CPSC310",
     name: "Introduction to Software Enigneering",
     focus: "CS",
-    takeaway: "",
+    takeaway: "Developed an understanding of scalable software design through design patterns, API development, testing, and modern DevOps workflows.",
     skills: ["Agile", "DevOp", "Design Principles", "API"]
   },
   {
     code: "CPSC322",
     name: "Introduction to Artificial Intelligence",
     focus: "CS",
-    takeaway: "Understanding how large-scale applications communicate across servers.",
-    skills: ["Decision Network", "Deterministic VS Stochastic Agent", "Search", "Constrain Optimization"]
+    takeaway: "Explored different problem domains and strategies for intelligent agents, including decision networks, constraint satisfaction, and advanced search algorithms.",
+    skills: ["Decision Network", "A* Search", "Constrain Optimization", "Planning"]
   },
   {
     code: "CPSC317",
     name: "Introduction to Computer Networking",
     focus: "CS",
-    takeaway: "",
+    takeaway: "Explored core networking protocols and performance through lectures and assignments simulating DNS, TCP retransmission, and routing.",
     skills: ["IP/TCP", "DNS", "VPN", "Routing Policy"]
   },
   {
@@ -41,9 +41,7 @@ const courseData = [
     name: "Data Structures & Algorithms",
     focus: "CS",
     takeaway: `
-    - Calculating code efficiencies 
-    - Implement different data structures
-    - Manipulating different data structures to solve complex problems
+    Learned core data structures, their common operations, and time complexity analysis through C++ implementations
     `,
     skills: ["Time Complexity", "Sorting", "Heaps", "Trees/Graphs"]
   },
@@ -51,28 +49,28 @@ const courseData = [
     code: "CPSC213",
     name: "Computer System",
     focus: "CS",
-    takeaway: "Programming using C; Debug using gdb",
+    takeaway: "Gained insight into how programs execute at a low level by working with assembly, C programming, and gdb debugging.",
     skills: ["Operating System", "Thread", "Assembly Language"]
   },
   {
     code: "STAT305",
     name: "Introduction to Statistical Inference",
     focus: "STAT",
-    takeaway: "Using sample to make inference about population; Bayesian view and Frequentist view",
-    skills: ["Sampling Distribution", "Maximum-Likelihood", "Inference"]
+    takeaway: "Explored statistical reasoning and inference, including maximum likelihood estimation, sampling distributions, and Bayesian methods.",
+    skills: ["Sampling Distribution", "Maximum-Likelihood", "Inference", "Baysian Inference"]
   },
   {
     code: "STAT306",
     name: "Finding Relationships in Data",
     focus: "STAT",
-    takeaway:  `Relationship between different types of data; model selection`,
+    takeaway:  `Studied the theory behind regression, including the sampling distribution of coefficients, model selection principles, and evaluation methods.`,
     skills: ["Linear Regression", "Poisson Regression", "LASSO", "AIC/BIC"]
   },
   {
     code: "DSCI100",
     name: "Introduction to Data Science",
     focus: "STAT",
-    takeaway: "",
+    takeaway: "Learned core machine learning concepts such as classification, clustering, and model evaluation by applying algorithms to training and test datasets in Python.",
     skills: ["Python Scikit-learn", "Cross-Validation", "Exploratory Data Analysis"]
   }
 ];

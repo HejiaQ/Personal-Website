@@ -50,7 +50,14 @@ const projects = [
     title: "Java Desktop Project: Spending Management App",
     category: "Logic",
     tech: ["Data Persistent", "Java", "JUnit", "Course Project"],
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem reiciendis recusandae expedita, atque incidunt provident porro sit. Quas minus adipisci vero corporis, quisquam eveniet optio aliquam omnis, reiciendis, totam magni.",
+    description:
+     `What the app does: A desktop application that helps users record daily expenses and analyze spending patterns over time. It provides basic insights into consumption behavior, allowing users to better understand where their money goes.
+     
+     What I achieved:
+     - Designed and implemented the graphical user interface using Java Swing components such as tables, lists, and dialogs.
+     - Built data persistence by reading from and writing to JSON files, allowing users to save and reload their records.
+     - Wrote black-box tests using JUnit with 100% code coverage to validate application behavior and reliability.
+    `,
     link: "#",
     image: spendingJava,
     status: "Completed"
