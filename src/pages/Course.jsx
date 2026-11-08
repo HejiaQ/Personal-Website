@@ -1,19 +1,33 @@
 import React from 'react';
 
 const courseData = [
-   {
-    code: "IT",
-    name: "Google IT support Certificate (Online Certificate)",
+  {
+    code: "CPSC416",
+    name: "Distributed Systems",
     focus: "CS",
-    takeaway: "Built a strong foundation in IT concepts through hands-on practice, applying troubleshooting, networking, and system administration skills in a virtual environment.",
-    skills: ["Troubele Shooting", "Networking", "Command Line Tools"]
+    takeaway: "Understood what is a distributed system and some famous algorithms that guide the design of distributed systems.",
+    skills: ["In Progress", "Distributed System", "Raft", "PBFT", "GoLang"]
+  },
+   {
+    code: "CPSC418",
+    name: "Parallel Computation",
+    focus: "CS",
+    takeaway: "Studied parallel algorithms and architectures, and developed techniques to analyze the performance of parallel computations.",
+    skills: ["In Progress", "Map & Reduce", "Erlang", "Passage Passing", "Performance Analysis"]
+  },
+  {
+    code: "STAT406",
+    name: "Methods for Statistical Learning",
+    focus: "STAT",
+    takeaway: "Studied machine learning from a statistical perspective and explored various models for prediction.",
+    skills: ["In Progress", "Regression", "Tree", "PCA", "Risk"]
   },
   {
     code: "CPSC320",
     name: "Intermediate Algorithm Design and Analysis",
     focus: "CS",
     takeaway: "Developed techniques for solving complex problems by studying advanced algorithms and strategic problem-solving approaches.",
-    skills: ["In Progress", "Greedy Algorithm", "Prune & Search", "time complexity analysis"]
+    skills: ["Greedy Algorithm", "Prune & Search", "time complexity analysis"]
   },
     {
     code: "CPSC310",
@@ -72,7 +86,13 @@ const courseData = [
     focus: "STAT",
     takeaway: "Learned core machine learning concepts such as classification, clustering, and model evaluation by applying algorithms to training and test datasets in Python.",
     skills: ["Python Scikit-learn", "Cross-Validation", "Exploratory Data Analysis"]
-  }
+  }, {
+    code: "IT",
+    name: "Google IT support Certificate (Online Certificate)",
+    focus: "CS",
+    takeaway: "Built a strong foundation in IT concepts through hands-on practice, applying troubleshooting, networking, and system administration skills in a virtual environment.",
+    skills: ["Troubele Shooting", "Networking", "Command Line Tools"]
+  },
 ];
 
 export default function Course() {
@@ -91,7 +111,7 @@ export default function Course() {
        {/* Top Credential Bar */}
       <div className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
         <p className="text-xs text-slate-400 font-medium text-center uppercase tracking-[0.2em]">
-          Current Avg: <span className="text-slate-900"> 94% </span> • Dean's List • Focus: Software & Data
+          Current Avg: <span className="text-slate-900"> 94% </span> • Dean's List • Focus: Software & System & Data
         </p>
       </div>
 
